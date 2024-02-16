@@ -35,6 +35,8 @@ One impediment might be the network bandwidth, it could fail sometimes, thus I n
 
 ### Backend TO-DO
 
-I need to create 1 store, each table should have a column to identify if the row is synced up.
-I need to create a hashmap in memory to identify which tables have been modified therefore these tables need to be updated.
-I need to create a backend API REST with domain driven design.
+- I need to create 1 store, each table should have a column to identify if the row is synced up.
+- I need to create a hashmap in memory to identify which tables have been modified therefore these tables need to be updated.
+- I need to create a backend API REST with domain driven design.
+
+Initially I tought of create a redis store locally but now I think I could not work as expected since local database would be a replica for the cloud one, so I need to implement a real database locally too, for compatibily and management purposes.
